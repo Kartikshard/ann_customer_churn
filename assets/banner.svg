@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="ANN Customer Churn Predictor, animated Y2K banner">
+  <title>ANN Customer Churn Predictor</title>
+  <style>
+    .sans{font-family:'Trebuchet MS',Verdana,Arial,sans-serif}
+    .mono{font-family:'Courier New','Lucida Console',monospace}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0230"><animate attributeName="stop-color" values="#0a0230;#2b0a66;#0a0230" dur="9s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#2a0a4a"><animate attributeName="stop-color" values="#2a0a4a;#05183f;#2a0a4a" dur="9s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <linearGradient id="titleGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="0.5" stop-color="#ff3df2"/>
+      <stop offset="1" stop-color="#faff3d"/>
+      <animate attributeName="x1" values="0;1200" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="600;1800" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rainbow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="0.25" stop-color="#ff3df2"/>
+      <stop offset="0.5" stop-color="#faff3d"/>
+      <stop offset="0.75" stop-color="#b4ff3d"/>
+      <stop offset="1" stop-color="#00f0ff"/>
+      <animate attributeName="x1" values="0;1200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1200;2400" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#c3d0ff"/>
+      <stop offset="0.5" stop-color="#8aa0ff"/>
+      <stop offset="1" stop-color="#e6ecff"/>
+    </linearGradient>
+    <radialGradient id="bubble" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#7ffbff" stop-opacity="0.25"/>
+      <stop offset="0.75" stop-color="#ff3df2" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#faff3d" stop-opacity="0.25"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#ffffff" opacity="0.06"/></pattern>
+    <clipPath id="win"><rect x="24" y="24" width="1152" height="312" rx="14"/></clipPath>
+    <clipPath id="floor"><rect x="24" y="246" width="1152" height="90"/></clipPath>
+    <clipPath id="marq"><rect x="24" y="296" width="1152" height="28"/></clipPath>
+    <path id="spark" d="M0 -16Q1.5 -1.5 16 0Q1.5 1.5 0 16Q-1.5 1.5 -16 0Q-1.5 -1.5 0 -16Z"/>
+  </defs>
+
+  <rect width="1200" height="360" fill="#05001a"/>
+
+  <g clip-path="url(#win)">
+    <rect x="24" y="24" width="1152" height="312" fill="url(#bg)"/>
+
+    <!-- scrolling perspective grid floor -->
+    <g clip-path="url(#floor)" stroke="#ff3df2" stroke-opacity="0.55" stroke-width="1.5" fill="none">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 22" dur="1.6s" repeatCount="indefinite"/>
+        <path d="M24 224H1176M24 246H1176M24 268H1176M24 290H1176M24 312H1176M24 334H1176"/>
+      </g>
+      <path d="M600 246L-300 336M600 246L-180 336M600 246L-60 336M600 246L60 336M600 246L180 336M600 246L300 336M600 246L420 336M600 246L540 336M600 246L660 336M600 246L780 336M600 246L900 336M600 246L1020 336M600 246L1140 336M600 246L1260 336M600 246L1380 336M600 246L1500 336"/>
+    </g>
+
+    <!-- floating bubbles -->
+    <circle cx="150" cy="330" r="22" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="340;80;340" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="150;180;150" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="300" r="14" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="320;90;320" dur="8.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="320;295;320" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="470" cy="340" r="26" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="350;110;350" dur="13s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="470;500;470" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="320" r="18" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="330;75;330" dur="9.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="760;735;760" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="340" r="24" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="350;95;350" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="900;930;900" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1030" cy="310" r="12" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="320;70;320" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="330" r="10" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.5">
+      <animate attributeName="cy" values="340;100;340" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- pulsing data points -->
+    <circle cx="95" cy="200" r="4" fill="#b4ff3d"><animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="262" r="4" fill="#00f0ff"><animate attributeName="r" values="3;6;3" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="380" cy="120" r="4" fill="#ff3df2"><animate attributeName="r" values="3;6;3" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="100" r="3" fill="#faff3d"><animate attributeName="r" values="2;5;2" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="262" r="4" fill="#b4ff3d"><animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="125" r="4" fill="#00f0ff"><animate attributeName="r" values="3;6;3" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="262" r="4" fill="#ff3df2"><animate attributeName="r" values="3;6;3" dur="1.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="1130" cy="235" r="3" fill="#faff3d"><animate attributeName="r" values="2;5;2" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="100" r="3" fill="#00f0ff"><animate attributeName="r" values="2;5;2" dur="2.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;1;0.4" dur="2.1s" repeatCount="indefinite"/></circle>
+
+    <!-- sparkles -->
+    <g transform="translate(250 92)"><use xlink:href="#spark" fill="#ffffff"><animateTransform attributeName="transform" type="scale" values="0.3;1.3;0.3" dur="2.4s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(950 96)"><use xlink:href="#spark" fill="#faff3d"><animateTransform attributeName="transform" type="scale" values="0.3;1.2;0.3" dur="3s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(180 250)"><use xlink:href="#spark" fill="#ff3df2"><animateTransform attributeName="transform" type="scale" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(1010 250)"><use xlink:href="#spark" fill="#00f0ff"><animateTransform attributeName="transform" type="scale" values="0.2;1.1;0.2" dur="2.2s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(600 82)"><use xlink:href="#spark" fill="#ffffff"><animateTransform attributeName="transform" type="scale" values="0.2;0.8;0.2" dur="1.9s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(430 232)"><use xlink:href="#spark" fill="#faff3d"><animateTransform attributeName="transform" type="scale" values="0.2;0.9;0.2" dur="3.4s" repeatCount="indefinite"/></use></g>
+
+    <!-- starburst stickers -->
+    <g transform="translate(110 140)">
+      <g fill="#00f0ff">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+        <rect x="-38" y="-38" width="76" height="76"/>
+        <rect x="-38" y="-38" width="76" height="76" transform="rotate(30)"/>
+        <rect x="-38" y="-38" width="76" height="76" transform="rotate(60)"/>
+      </g>
+      <text class="sans" x="0" y="5" font-size="14" font-weight="900" text-anchor="middle" fill="#0a0230">PYTORCH</text>
+    </g>
+    <g transform="translate(1090 140)">
+      <g fill="#faff3d">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
+        <rect x="-38" y="-38" width="76" height="76"/>
+        <rect x="-38" y="-38" width="76" height="76" transform="rotate(30)"/>
+        <rect x="-38" y="-38" width="76" height="76" transform="rotate(60)"/>
+      </g>
+      <text class="sans" x="0" y="4" font-size="26" font-weight="900" text-anchor="middle" fill="#0a0230">100</text>
+      <text class="sans" x="0" y="20" font-size="11" font-weight="900" text-anchor="middle" fill="#0a0230">EPOCHS</text>
+    </g>
+
+    <!-- title -->
+    <g class="sans" font-weight="900" font-size="62" text-anchor="middle">
+      <text x="604" y="154" fill="#ff3df2" opacity="0.55" textLength="780" lengthAdjust="spacingAndGlyphs">ANN CHURN PREDICTOR</text>
+      <text x="600" y="150" fill="url(#titleGrad)" filter="url(#glow)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.6" textLength="780" lengthAdjust="spacingAndGlyphs">ANN CHURN PREDICTOR</text>
+    </g>
+    <text class="mono" x="600" y="188" font-size="19" fill="#d5ecff" text-anchor="middle" textLength="600" lengthAdjust="spacing">PyTorch ANN · 10 → 16 → 8 → 1 · binary classification</text>
+
+    <!-- status pill -->
+    <rect x="370" y="206" width="460" height="28" rx="14" fill="#0a0230" fill-opacity="0.85" stroke="#b4ff3d" stroke-width="1.5"/>
+    <circle cx="392" cy="220" r="5" fill="#b4ff3d">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text class="mono" x="612" y="225" font-size="14" font-weight="bold" fill="#e9ffc4" text-anchor="middle" textLength="300" lengthAdjust="spacing">TRAINING DONE | NEXT: EVALUATION</text>
+
+    <!-- marquee -->
+    <rect x="24" y="296" width="1152" height="28" fill="#05001a" fill-opacity="0.75"/>
+    <path d="M24 296H1176M24 324H1176" stroke="#00f0ff" stroke-opacity="0.7" stroke-width="1"/>
+    <g clip-path="url(#marq)">
+      <g class="mono" font-size="15" font-weight="bold" fill="#00f0ff">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1300 0" dur="22s" repeatCount="indefinite"/>
+        <text x="0" y="316" textLength="1300" lengthAdjust="spacing">50,000 CUSTOMERS // 10 FEATURES // BCE LOSS 0.69 → 0.39 // TEST LOSS ≈ 0.389 // ADAM // NEXT: ACCURACY · PRECISION · RECALL · F1 //</text>
+        <text x="1300" y="316" textLength="1300" lengthAdjust="spacing">50,000 CUSTOMERS // 10 FEATURES // BCE LOSS 0.69 → 0.39 // TEST LOSS ≈ 0.389 // ADAM // NEXT: ACCURACY · PRECISION · RECALL · F1 //</text>
+      </g>
+    </g>
+
+    <rect x="24" y="24" width="1152" height="312" fill="url(#scan)"/>
+
+    <!-- window titlebar -->
+    <rect x="24" y="24" width="1152" height="36" fill="url(#chrome)"/>
+    <path d="M24 60H1176" stroke="#5a6bd6" stroke-width="2"/>
+    <circle cx="46" cy="42" r="6" fill="#ff3df2" stroke="#0a0230" stroke-width="1.5"/>
+    <text class="mono" x="62" y="47" font-size="15" font-weight="bold" fill="#0a0230">C:\CHURN\ann_churn_predictor.exe</text>
+    <rect x="1090" y="32" width="24" height="20" rx="4" fill="url(#chrome)" stroke="#0a0230" stroke-width="1.5"/>
+    <path d="M1096 48H1108" stroke="#0a0230" stroke-width="2"/>
+    <rect x="1120" y="32" width="24" height="20" rx="4" fill="url(#chrome)" stroke="#0a0230" stroke-width="1.5"/>
+    <rect x="1127" y="37" width="10" height="10" fill="none" stroke="#0a0230" stroke-width="2"/>
+    <rect x="1150" y="32" width="24" height="20" rx="4" fill="#ff3df2" stroke="#0a0230" stroke-width="1.5">
+      <animate attributeName="fill" values="#ff3df2;#ff8cf7;#ff3df2" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M1157 37L1167 47M1167 37L1157 47" stroke="#0a0230" stroke-width="2"/>
+  </g>
+
+  <rect x="24" y="24" width="1152" height="312" rx="14" fill="none" stroke="url(#rainbow)" stroke-width="3"/>
+</svg>
