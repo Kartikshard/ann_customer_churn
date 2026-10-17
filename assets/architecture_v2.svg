@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Animated neural network architecture v2: 10 inputs, 32 hidden neurons, 16 hidden neurons, 8 hidden neurons, 1 logit output">
+  <title>ANN architecture v2 - 10 - 32 - 16 - 8 - 1</title>
+  <style>
+    .sans{font-family:'Trebuchet MS',Verdana,Arial,sans-serif}
+    .mono{font-family:'Courier New','Lucida Console',monospace}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0230"/>
+      <stop offset="1" stop-color="#1b0850"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="640" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="0.5" stop-color="#ff3df2"/>
+      <stop offset="1" stop-color="#faff3d"/>
+      <animate attributeName="x1" values="0;1280" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="640;1920" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rainbow" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1280" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="0.25" stop-color="#ff3df2"/>
+      <stop offset="0.5" stop-color="#faff3d"/>
+      <stop offset="0.75" stop-color="#b4ff3d"/>
+      <stop offset="1" stop-color="#00f0ff"/>
+      <animate attributeName="x1" values="0;1280" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1280;2560" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#c3d0ff"/>
+      <stop offset="0.5" stop-color="#8aa0ff"/>
+      <stop offset="1" stop-color="#e6ecff"/>
+    </linearGradient>
+    <linearGradient id="beamG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bar01" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00f0ff"/><stop offset="1" stop-color="#ff3df2"/></linearGradient>
+    <radialGradient id="gIn" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#7ffbff"/><stop offset="1" stop-color="#0088b0"/></radialGradient>
+    <radialGradient id="gH1" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#cdb4ff"/><stop offset="1" stop-color="#6a3fd0"/></radialGradient>
+    <radialGradient id="gH2" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#e2ff9a"/><stop offset="1" stop-color="#5da800"/></radialGradient>
+    <radialGradient id="gH3" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#fffdb0"/><stop offset="1" stop-color="#b8b000"/></radialGradient>
+    <radialGradient id="gOut" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#ffa6f8"/><stop offset="1" stop-color="#c0149f"/></radialGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#ffffff" opacity="0.06"/></pattern>
+    <clipPath id="win"><rect x="10" y="10" width="1260" height="700" rx="16"/></clipPath>
+    <clipPath id="marq"><rect x="10" y="672" width="1260" height="24"/></clipPath>
+    <path id="spark" d="M0 -14Q1.5 -1.5 14 0Q1.5 1.5 0 14Q-1.5 1.5 -14 0Q-1.5 -1.5 0 -14Z"/>
+    <circle id="node" r="13"/>
+
+    <!-- full connection meshes (hidden layers 1 and 2 draw 8 of their 32 / 16 neurons) -->
+    <path id="m1" d="
+      M230 205L440 202M230 205L440 246M230 205L440 290M230 205L440 334M230 205L440 418M230 205L440 462M230 205L440 506M230 205L440 550
+      M230 243L440 202M230 243L440 246M230 243L440 290M230 243L440 334M230 243L440 418M230 243L440 462M230 243L440 506M230 243L440 550
+      M230 281L440 202M230 281L440 246M230 281L440 290M230 281L440 334M230 281L440 418M230 281L440 462M230 281L440 506M230 281L440 550
+      M230 319L440 202M230 319L440 246M230 319L440 290M230 319L440 334M230 319L440 418M230 319L440 462M230 319L440 506M230 319L440 550
+      M230 357L440 202M230 357L440 246M230 357L440 290M230 357L440 334M230 357L440 418M230 357L440 462M230 357L440 506M230 357L440 550
+      M230 395L440 202M230 395L440 246M230 395L440 290M230 395L440 334M230 395L440 418M230 395L440 462M230 395L440 506M230 395L440 550
+      M230 433L440 202M230 433L440 246M230 433L440 290M230 433L440 334M230 433L440 418M230 433L440 462M230 433L440 506M230 433L440 550
+      M230 471L440 202M230 471L440 246M230 471L440 290M230 471L440 334M230 471L440 418M230 471L440 462M230 471L440 506M230 471L440 550
+      M230 509L440 202M230 509L440 246M230 509L440 290M230 509L440 334M230 509L440 418M230 509L440 462M230 509L440 506M230 509L440 550
+      M230 547L440 202M230 547L440 246M230 547L440 290M230 547L440 334M230 547L440 418M230 547L440 462M230 547L440 506M230 547L440 550"/>
+    <path id="m2" d="
+      M440 202L650 202M440 202L650 246M440 202L650 290M440 202L650 334M440 202L650 418M440 202L650 462M440 202L650 506M440 202L650 550
+      M440 246L650 202M440 246L650 246M440 246L650 290M440 246L650 334M440 246L650 418M440 246L650 462M440 246L650 506M440 246L650 550
+      M440 290L650 202M440 290L650 246M440 290L650 290M440 290L650 334M440 290L650 418M440 290L650 462M440 290L650 506M440 290L650 550
+      M440 334L650 202M440 334L650 246M440 334L650 290M440 334L650 334M440 334L650 418M440 334L650 462M440 334L650 506M440 334L650 550
+      M440 418L650 202M440 418L650 246M440 418L650 290M440 418L650 334M440 418L650 418M440 418L650 462M440 418L650 506M440 418L650 550
+      M440 462L650 202M440 462L650 246M440 462L650 290M440 462L650 334M440 462L650 418M440 462L650 462M440 462L650 506M440 462L650 550
+      M440 506L650 202M440 506L650 246M440 506L650 290M440 506L650 334M440 506L650 418M440 506L650 462M440 506L650 506M440 506L650 550
+      M440 550L650 202M440 550L650 246M440 550L650 290M440 550L650 334M440 550L650 418M440 550L650 462M440 550L650 506M440 550L650 550"/>
+    <path id="m3" d="
+      M650 202L850 194M650 202L850 246M650 202L850 298M650 202L850 350M650 202L850 402M650 202L850 454M650 202L850 506M650 202L850 558
+      M650 246L850 194M650 246L850 246M650 246L850 298M650 246L850 350M650 246L850 402M650 246L850 454M650 246L850 506M650 246L850 558
+      M650 290L850 194M650 290L850 246M650 290L850 298M650 290L850 350M650 290L850 402M650 290L850 454M650 290L850 506M650 290L850 558
+      M650 334L850 194M650 334L850 246M650 334L850 298M650 334L850 350M650 334L850 402M650 334L850 454M650 334L850 506M650 334L850 558
+      M650 418L850 194M650 418L850 246M650 418L850 298M650 418L850 350M650 418L850 402M650 418L850 454M650 418L850 506M650 418L850 558
+      M650 462L850 194M650 462L850 246M650 462L850 298M650 462L850 350M650 462L850 402M650 462L850 454M650 462L850 506M650 462L850 558
+      M650 506L850 194M650 506L850 246M650 506L850 298M650 506L850 350M650 506L850 402M650 506L850 454M650 506L850 506M650 506L850 558
+      M650 550L850 194M650 550L850 246M650 550L850 298M650 550L850 350M650 550L850 402M650 550L850 454M650 550L850 506M650 550L850 558"/>
+    <path id="m4" d="M850 194L1020 376M850 246L1020 376M850 298L1020 376M850 350L1020 376M850 402L1020 376M850 454L1020 376M850 506L1020 376M850 558L1020 376"/>
+  </defs>
+
+  <rect width="1280" height="720" fill="#05001a"/>
+
+  <g clip-path="url(#win)">
+    <rect x="10" y="10" width="1260" height="700" fill="url(#bg)"/>
+
+    <!-- heading -->
+    <text class="sans" x="640" y="92" font-size="32" font-weight="900" text-anchor="middle" fill="url(#titleGrad)" filter="url(#glow)" textLength="620" lengthAdjust="spacingAndGlyphs">NEURAL NETWORK ARCHITECTURE</text>
+    <text class="mono" x="640" y="115" font-size="14" text-anchor="middle" fill="#cbd5ff" textLength="520" lengthAdjust="spacing">v2 · class-weighted · customer churn · fully connected</text>
+
+    <!-- layer panels (flash as the forward-pass beam crosses them) -->
+    <rect x="210" y="180" width="40" height="390" rx="20" fill="#00f0ff" opacity="0.18">
+      <animate attributeName="opacity" values="0.18;0.18;0.6;0.18;0.18" keyTimes="0;0.06;0.096;0.19;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="420" y="180" width="40" height="390" rx="20" fill="#b48cff" opacity="0.18">
+      <animate attributeName="opacity" values="0.18;0.18;0.6;0.18;0.18" keyTimes="0;0.30;0.33;0.43;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="630" y="180" width="40" height="390" rx="20" fill="#b4ff3d" opacity="0.18">
+      <animate attributeName="opacity" values="0.18;0.18;0.6;0.18;0.18" keyTimes="0;0.54;0.567;0.667;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="830" y="170" width="40" height="400" rx="20" fill="#faff3d" opacity="0.18">
+      <animate attributeName="opacity" values="0.18;0.18;0.6;0.18;0.18" keyTimes="0;0.76;0.79;0.89;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="996" y="338" width="48" height="76" rx="24" fill="#ff3df2" opacity="0.18">
+      <animate attributeName="opacity" values="0.18;0.18;0.7;0.18;0.18" keyTimes="0;0.94;0.97;0.995;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- layer headers -->
+    <g class="sans" font-weight="900" font-size="16" text-anchor="middle">
+      <text x="230" y="148" fill="#00f0ff">INPUT</text>
+      <text x="440" y="148" fill="#b48cff">HIDDEN 1</text>
+      <text x="650" y="148" fill="#b4ff3d">HIDDEN 2</text>
+      <text x="850" y="148" fill="#faff3d">HIDDEN 3</text>
+      <text x="1020" y="148" fill="#ff3df2">OUTPUT</text>
+    </g>
+    <g class="mono" font-size="12" text-anchor="middle" fill="#cbd5ff">
+      <text x="230" y="166">10 features</text>
+      <text x="440" y="166">32 neurons (8 shown)</text>
+      <text x="650" y="166">16 neurons (8 shown)</text>
+      <text x="850" y="166">8 neurons</text>
+      <text x="1020" y="166">1 neuron</text>
+    </g>
+
+    <!-- connections -->
+    <g fill="none" stroke-linecap="round">
+      <use xlink:href="#m1" stroke="#b9a7ff" stroke-opacity="0.2" stroke-width="1"/>
+      <use xlink:href="#m2" stroke="#b9a7ff" stroke-opacity="0.2" stroke-width="1"/>
+      <use xlink:href="#m3" stroke="#b9a7ff" stroke-opacity="0.2" stroke-width="1"/>
+      <use xlink:href="#m4" stroke="#b9a7ff" stroke-opacity="0.3" stroke-width="1"/>
+      <!-- data pulses -->
+      <use xlink:href="#m1" stroke="#00f0ff" stroke-opacity="0.9" stroke-width="1.6" stroke-dasharray="6 94">
+        <animate attributeName="stroke-dashoffset" values="0;-100" dur="2s" repeatCount="indefinite"/>
+      </use>
+      <use xlink:href="#m2" stroke="#ff3df2" stroke-opacity="0.9" stroke-width="1.6" stroke-dasharray="6 94">
+        <animate attributeName="stroke-dashoffset" values="0;-100" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+      </use>
+      <use xlink:href="#m3" stroke="#b4ff3d" stroke-opacity="0.9" stroke-width="1.6" stroke-dasharray="6 94">
+        <animate attributeName="stroke-dashoffset" values="0;-100" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+      </use>
+      <use xlink:href="#m4" stroke="#faff3d" stroke-opacity="0.95" stroke-width="2" stroke-dasharray="8 92">
+        <animate attributeName="stroke-dashoffset" values="0;-100" dur="1.6s" begin="1.2s" repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <!-- hidden layer 1 and 2 ellipsis -->
+    <g fill="#ffffff">
+      <circle cx="440" cy="360" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="440" cy="376" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.25s" repeatCount="indefinite"/></circle>
+      <circle cx="440" cy="392" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+      <circle cx="650" cy="360" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.15s" repeatCount="indefinite"/></circle>
+      <circle cx="650" cy="376" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.4s" repeatCount="indefinite"/></circle>
+      <circle cx="650" cy="392" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.65s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- neurons -->
+    <g fill="url(#gIn)" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.5">
+      <use xlink:href="#node" x="230" y="205"/><use xlink:href="#node" x="230" y="243"/><use xlink:href="#node" x="230" y="281"/>
+      <use xlink:href="#node" x="230" y="319"/><use xlink:href="#node" x="230" y="357"/><use xlink:href="#node" x="230" y="395"/>
+      <use xlink:href="#node" x="230" y="433"/><use xlink:href="#node" x="230" y="471"/><use xlink:href="#node" x="230" y="509"/>
+      <use xlink:href="#node" x="230" y="547"/>
+    </g>
+    <g fill="url(#gH1)" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.5">
+      <use xlink:href="#node" x="440" y="202"/><use xlink:href="#node" x="440" y="246"/><use xlink:href="#node" x="440" y="290"/>
+      <use xlink:href="#node" x="440" y="334"/><use xlink:href="#node" x="440" y="418"/><use xlink:href="#node" x="440" y="462"/>
+      <use xlink:href="#node" x="440" y="506"/><use xlink:href="#node" x="440" y="550"/>
+    </g>
+    <g fill="url(#gH2)" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.5">
+      <use xlink:href="#node" x="650" y="202"/><use xlink:href="#node" x="650" y="246"/><use xlink:href="#node" x="650" y="290"/>
+      <use xlink:href="#node" x="650" y="334"/><use xlink:href="#node" x="650" y="418"/><use xlink:href="#node" x="650" y="462"/>
+      <use xlink:href="#node" x="650" y="506"/><use xlink:href="#node" x="650" y="550"/>
+    </g>
+    <g fill="url(#gH3)" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.5">
+      <use xlink:href="#node" x="850" y="194"/><use xlink:href="#node" x="850" y="246"/><use xlink:href="#node" x="850" y="298"/>
+      <use xlink:href="#node" x="850" y="350"/><use xlink:href="#node" x="850" y="402"/><use xlink:href="#node" x="850" y="454"/>
+      <use xlink:href="#node" x="850" y="506"/><use xlink:href="#node" x="850" y="558"/>
+    </g>
+    <circle cx="1020" cy="376" r="17" fill="none" stroke="#ff3df2" stroke-width="2">
+      <animate attributeName="r" values="17;30" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1020" cy="376" r="17" fill="url(#gOut)" stroke="#ffffff" stroke-opacity="0.85" stroke-width="2"/>
+
+    <!-- input feature names (from the dataset) -->
+    <g class="mono" font-size="14" fill="#d9e8ff" text-anchor="end">
+      <text x="206" y="210">age</text>
+      <text x="206" y="248">tenure_months</text>
+      <text x="206" y="286">monthly_charges</text>
+      <text x="206" y="324">support_tickets</text>
+      <text x="206" y="362">late_payments</text>
+      <text x="206" y="400">usage_hours</text>
+      <text x="206" y="438">satisfaction</text>
+      <text x="206" y="476">contract_monthly</text>
+      <text x="206" y="514">tech_support</text>
+      <text x="206" y="552">auto_payment</text>
+    </g>
+
+    <!-- output arrow + probability meter (sigmoid is applied only at inference) -->
+    <path d="M1040 376H1078" stroke="#ff3df2" stroke-width="3" stroke-dasharray="6 4" fill="none">
+      <animate attributeName="stroke-dashoffset" values="0;-20" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="1078,369 1090,376 1078,383" fill="#ff3df2"/>
+    <rect x="1090" y="312" width="172" height="128" rx="12" fill="#0a0230" fill-opacity="0.85" stroke="#ff3df2" stroke-width="2"/>
+    <text class="sans" x="1176" y="344" font-size="22" font-weight="900" text-anchor="middle" fill="#ffffff">ŷ = σ(z)</text>
+    <text class="mono" x="1176" y="363" font-size="13" text-anchor="middle" fill="#ffd1fb">P(churn = 1)</text>
+    <rect x="1106" y="378" width="140" height="8" rx="4" fill="url(#bar01)" stroke="#ffffff" stroke-opacity="0.5"/>
+    <line x1="1148" y1="371" x2="1148" y2="393" stroke="#ffffff" stroke-width="2" stroke-dasharray="3 2"/>
+    <circle cy="382" r="6" fill="#ffffff" stroke="#ff3df2" stroke-width="2">
+      <animate attributeName="cx" values="1110;1242;1110" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text class="mono" x="1148" y="408" font-size="11" text-anchor="middle" fill="#ffffff">threshold 0.30</text>
+    <text class="mono" x="1176" y="428" font-size="10" text-anchor="middle" fill="#cbd5ff">σ applied at inference only</text>
+
+    <!-- bottom info boxes -->
+    <g class="mono" text-anchor="middle">
+      <rect x="150" y="588" width="160" height="52" rx="10" fill="#0a0230" fill-opacity="0.85" stroke="#00f0ff" stroke-width="1.5"/>
+      <text x="230" y="609" font-size="12" font-weight="bold" fill="#00f0ff">StandardScaler</text>
+      <text x="230" y="627" font-size="12" fill="#cbd5ff">tensor (N, 10)</text>
+
+      <rect x="360" y="588" width="160" height="52" rx="10" fill="#0a0230" fill-opacity="0.85" stroke="#b48cff" stroke-width="1.5"/>
+      <text x="440" y="609" font-size="12" font-weight="bold" fill="#b48cff">Linear(10→32) + ReLU</text>
+      <text x="440" y="627" font-size="12" fill="#cbd5ff">352 params</text>
+
+      <rect x="570" y="588" width="160" height="52" rx="10" fill="#0a0230" fill-opacity="0.85" stroke="#b4ff3d" stroke-width="1.5"/>
+      <text x="650" y="609" font-size="12" font-weight="bold" fill="#b4ff3d">Linear(32→16) + ReLU</text>
+      <text x="650" y="627" font-size="12" fill="#cbd5ff">528 params</text>
+
+      <rect x="770" y="588" width="160" height="52" rx="10" fill="#0a0230" fill-opacity="0.85" stroke="#faff3d" stroke-width="1.5"/>
+      <text x="850" y="609" font-size="12" font-weight="bold" fill="#faff3d">Linear(16→8) + ReLU</text>
+      <text x="850" y="627" font-size="12" fill="#cbd5ff">136 params</text>
+
+      <rect x="940" y="588" width="160" height="52" rx="10" fill="#0a0230" fill-opacity="0.85" stroke="#ff3df2" stroke-width="1.5"/>
+      <text x="1020" y="609" font-size="12" font-weight="bold" fill="#ff3df2">Linear(8→1) → logit</text>
+      <text x="1020" y="627" font-size="12" fill="#cbd5ff">9 params</text>
+    </g>
+    <g class="mono" font-size="12" text-anchor="middle" fill="#8aa0ff">
+      <text x="440" y="658">out (N, 32)</text>
+      <text x="650" y="658">out (N, 16)</text>
+      <text x="850" y="658">out (N, 8)</text>
+      <text x="1020" y="658">out (N, 1)</text>
+    </g>
+
+    <!-- forward-pass beam -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.97;1" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="110 0;1000 0" dur="5s" repeatCount="indefinite"/>
+      <rect x="0" y="175" width="70" height="395" fill="url(#beamG)"/>
+    </g>
+
+    <!-- marquee -->
+    <rect x="10" y="672" width="1260" height="24" fill="#05001a" fill-opacity="0.75"/>
+    <path d="M10 672H1270M10 696H1270" stroke="#00f0ff" stroke-opacity="0.7"/>
+    <g clip-path="url(#marq)">
+      <g class="mono" font-size="14" font-weight="bold" fill="#00f0ff">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1400 0" dur="28s" repeatCount="indefinite"/>
+        <text x="0" y="689" textLength="1400" lengthAdjust="spacing">FORWARD PASS // LOGITS // WEIGHTED BCE LOSS // BACKPROP // GRADIENTS // ADAM UPDATE // REPEAT // 3x ReLU // NO FINAL SIGMOID // THRESHOLD 0.30 // 1,025 PARAMETERS //</text>
+        <text x="1400" y="689" textLength="1400" lengthAdjust="spacing">FORWARD PASS // LOGITS // WEIGHTED BCE LOSS // BACKPROP // GRADIENTS // ADAM UPDATE // REPEAT // 3x ReLU // NO FINAL SIGMOID // THRESHOLD 0.30 // 1,025 PARAMETERS //</text>
+      </g>
+    </g>
+
+    <!-- sparkles -->
+    <g transform="translate(80 100)"><use xlink:href="#spark" fill="#ffffff"><animateTransform attributeName="transform" type="scale" values="0.3;1.2;0.3" dur="2.4s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(1200 110)"><use xlink:href="#spark" fill="#faff3d"><animateTransform attributeName="transform" type="scale" values="0.3;1.2;0.3" dur="3s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(90 620)"><use xlink:href="#spark" fill="#ff3df2"><animateTransform attributeName="transform" type="scale" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(1210 600)"><use xlink:href="#spark" fill="#00f0ff"><animateTransform attributeName="transform" type="scale" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/></use></g>
+    <g transform="translate(340 135)"><use xlink:href="#spark" fill="#b4ff3d"><animateTransform attributeName="transform" type="scale" values="0.2;0.9;0.2" dur="3.4s" repeatCount="indefinite"/></use></g>
+
+    <rect x="10" y="10" width="1260" height="700" fill="url(#scan)"/>
+
+    <!-- titlebar -->
+    <rect x="10" y="10" width="1260" height="40" fill="url(#chrome)"/>
+    <path d="M10 50H1270" stroke="#5a6bd6" stroke-width="2"/>
+    <circle cx="34" cy="30" r="6" fill="#b4ff3d" stroke="#0a0230" stroke-width="1.5"/>
+    <text class="mono" x="50" y="35" font-size="15" font-weight="bold" fill="#0a0230">C:\CHURN\forward_pass_v2.exe  //  10 → 32 → 16 → 8 → 1</text>
+    <rect x="1170" y="20" width="24" height="20" rx="4" fill="url(#chrome)" stroke="#0a0230" stroke-width="1.5"/>
+    <path d="M1176 36H1188" stroke="#0a0230" stroke-width="2"/>
+    <rect x="1200" y="20" width="24" height="20" rx="4" fill="url(#chrome)" stroke="#0a0230" stroke-width="1.5"/>
+    <rect x="1207" y="25" width="10" height="10" fill="none" stroke="#0a0230" stroke-width="2"/>
+    <rect x="1230" y="20" width="24" height="20" rx="4" fill="#ff3df2" stroke="#0a0230" stroke-width="1.5"/>
+    <path d="M1237 25l10 10M1247 25l-10 10" stroke="#0a0230" stroke-width="2"/>
+  </g>
+
+  <rect x="10" y="10" width="1260" height="700" rx="16" fill="none" stroke="url(#rainbow)" stroke-width="3"/>
+</svg>
